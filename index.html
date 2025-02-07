@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/top-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Iphon-shop</title>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background:transparent;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            padding: 20px 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            width: 220px;
+            margin: 25px 0;
+            height: 246px;
+            text-align: center;
+            font-size: 18px;
+            padding: 15px 0;
+            background: white;
+            align-items: center;
+            border-radius:5px;
+        }
+
+        swiper-slide img {
+            /* text-align: center; */
+            margin: 15px  auto 0 auto;
+            background-color:transparent;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ----------------------------------------------navbar------------------------------------ -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><img class="logo" src="./img/top-logo.png" alt=""></a>
+                    <a href="#" class="nav-link">Ташкент</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">IPhone</a>
+                    <a href="#" class="nav-link">Блог</a>
+                    <a href="#" class="nav-link">Сравнение</a>
+                    <a href="#" class="nav-link">Ремонт</a>
+                    <a href="#" class="nav-link">Trade-in</a>
+                    <select id="">
+                        <option value="1">RU</option>
+                        <option value="2">UZ</option>
+                        <option value="3">EN</option>
+                    </select>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <hr class="top-hr">
+    <!-- ------------------------------------------header--------------------------------- -->
+    <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="header-left">
+                    <h1 class="header-title">Оригинальная продукция Apple в Ташкенте</h1>
+                    <h5 class="header-subtitle">Перейти в раздел</h5>
+                    <div class="header-left-box">
+                        <img class="header-img" src="./img/iphon-four.svg" alt="">
+                        <img class="header-img" src="./img/iphon-five.svg" alt="">
+                        <img class="header-img" src="./img/iphon-six.svg" alt="">
+                        <img class="header-img" src="./img/iphon-eight.svg" alt="">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <!-- -----right-top--- -->
+                    <div class="header-right-top">
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <img class="top-img" src="./img/iphon-one.svg" alt="">
+                            </li>
+                            <li class="header-item">
+                                <h3 class="header-list-title">iPhone 15 Pro</h3>
+                                <p class="header-list-text">полная комплектация от 106 000 ₽</p>
+                                <button class="header-rigth-btn">Перейти в раздел</button>
+                            </li>
+                            <li class="header-item">
+                                <img src="./img/iphon-three.svg" class="header-image" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- -----right-top--- -->
+                    <div class="header-right-bottom">
+                        <div class="header-right-left">
+                            <h2 class="header-right-left-title">Покупайте сейчас, платите потом</h2>
+                            <p class="header-right-left-text">Рассрочка без % на 2, 4 и 6 месяцев</p>
+                            <button class="header-right-left-btn">Узнать подробнее</button>
+                        </div>
+                        <div class="header-right-right">
+                            <img class="right-img" src="./img/iphon-seven.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 15 Pro Max</h2>
+                        <img src="./img/iphone-one.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 15 Pro Max</button>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-two.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">126 710 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">141 560 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">154 999 ₽</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">106 910 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">113 840 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">154 999 ₽</p>
+                    </li>
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 15 Pro </h2>
+                        <img src="./img/iphon-one.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 15 Pro </button>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 15 Plus</h2>
+                        <img src="./img/iphone-31.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 15 Plus</button>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">126 710 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">141 560 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">154 999 ₽</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">106 910 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">113 840 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 15 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">154 999 ₽</p>
+                    </li>
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 15 </h2>
+                        <img src="./img/iphone-41.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 15 </button>
+                        <img src="./img/img (5).svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 14 Pro Max</h2>
+                        <img src="./img/iphone-51.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 14 Pro Max</button>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-two.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">126 710 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">141 560 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro Max</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">144 999 ₽</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">106 910 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">113 840 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">178 023 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Pro </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">144 999 ₽</p>
+                    </li>
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 14 Pro </h2>
+                        <img src="./img/iphone-61.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 14 Pro </button>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 14 Plus</h2>
+                        <img src="./img/iphone-71.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 14 Plus</button>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Plus</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">126 710 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Plus</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">141 560 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Plus</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">278 325 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 Plus</h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">134 982 ₽</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+
+                    <li class="hero-item">
+                        <img src="./img/iphone-21.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 256 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">116 919 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-three.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">173 340 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-four.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 1 ТБ </h5>
+                        <h5 class="hero-info">SIM-карты: Dual nano SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">219 073 ₽</p>
+                    </li>
+                    <li class="hero-item">
+                        <img src="./img/iphone-five.svg" class="iphone-two" alt="">
+                        <h4 class="hero-subtitle">iPhone 14 </h4>
+                        <h5 class="hero-info">Состояние: Новый </h5>
+                        <h5 class="hero-info">Память: 512 ГБ </h5>
+                        <h5 class="hero-info">SIM-карты: 2 nano-SIM </h5>
+                        <h5 class="hero-info">SIM-карты: 94% </h5>
+                        <p class="hero-price">101 999 ₽</p>
+                    </li>
+                    <li class="hero-item1">
+                        <h2 class="hero-title">iPhone 14 </h2>
+                        <img src="./img/iphone-81.svg" class="iphone-one" alt="">
+                        <p class="hero-text">Перейти в раздел</p>
+                        <button class="hero-btn">iPhone 14 </button>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <section class="service">
+            <div class="container">
+                <h2 class="service-title">Другие модели iPhone</h2>
+
+
+
+                <swiper-container   loop="true" infinite="true" class="mySwiper" pagination="true" pagination-clickable="true" space-between="15"
+                    slides-per-view="5">
+                    <swiper-slide><img class="slider-img" src="./img/iphone-three.svg" alt="">
+                    <h5 class="slider-title">iPhone 15</h5>
+                    </swiper-slide>
+                    <swiper-slide><img class="slider-img" src="./img/iphone-slider2.svg" alt="">
+                    <h5 class="slider-title">iPhone 11</h5>
+                    </swiper-slide>
+                    <swiper-slide><img class="slider-img" src="./img/iphone-slider3.svg" alt="">
+                    <h5 class="slider-title">iPhone X</h5>
+                    </swiper-slide>
+                    <swiper-slide><img class="slider-img" src="./img/iphone-slider4.svg" alt="">
+                    <h5 class="slider-title">iPhone 8</h5>
+                    </swiper-slide>
+                    <swiper-slide><img class="slider-img" src="./img/iphone-slider5.svg" alt="">
+                    <h5 class="slider-title">iPhone SE</h5>
+                    </swiper-slide>
+                    <swiper-slide><img class="slider-img" src="./img/iphone-21.svg" alt="">
+                    <h5 class="slider-title">iPhone 14</h5>
+                    </swiper-slide>
+                    
+                </swiper-container>
+
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
