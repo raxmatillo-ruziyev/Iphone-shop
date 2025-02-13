@@ -12,50 +12,7 @@
     <link rel="stylesheet" href="./main.css">
     <title>Iphon-shop</title>
 
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
 
-        body {
-            background: transparent;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        swiper-container {
-            padding: 20px 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        swiper-slide {
-            width: 220px;
-            margin: 25px 0;
-            height: 246px;
-            text-align: center;
-            font-size: 18px;
-            padding: 15px 0;
-            background: white;
-            align-items: center;
-            border-radius: 5px;
-        }
-
-        swiper-slide img {
-            /* text-align: center; */
-            margin: 15px auto 0 auto;
-            background-color: transparent;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 
 <body>
@@ -631,11 +588,7 @@
         <section class="service">
             <div class="container">
                 <h2 class="service-title">Другие модели iPhone</h2>
-
-
-
-                <swiper-container loop="true" infinite="true" class="mySwiper" pagination="true"
-                    pagination-clickable="true" space-between="15" slides-per-view="5">
+                <swiper-container class="mySwiper" loop="true" pagination="true" pagination-clickable="true">
                     <swiper-slide><img class="slider-img" src="./img/iphone-three.svg" alt="">
                         <h5 class="slider-title">iPhone 15</h5>
                     </swiper-slide>
@@ -654,7 +607,6 @@
                     <swiper-slide><img class="slider-img" src="./img/iphone-21.svg" alt="">
                         <h5 class="slider-title">iPhone 14</h5>
                     </swiper-slide>
-
                 </swiper-container>
 
 
@@ -753,7 +705,39 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiperEl = document.querySelector('.mySwiper');
+            
+            Object.assign(swiperEl, {
+                spaceBetween: 10,  // Default
+                slidesPerView: 1,  // Default
+                breakpoints: {
+                    480: { // 480px dan katta ekranlarda
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    768: { // 768px dan katta ekranlarda
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1020: { // 1024px dan katta ekranlarda
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                    1280: { // 1280px dan katta ekranlarda
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+    
+            swiperEl.initialize();
+        });
+    </script>
+
 </body>
 
 </html>
