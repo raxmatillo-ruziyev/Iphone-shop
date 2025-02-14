@@ -585,7 +585,7 @@
         <br>
         <br>
 
-        <!-- <section class="service">
+        <section class="service">
             <div class="container">
                 <h2 class="service-title">Другие модели iPhone</h2>
                 <swiper-container class="mySwiper" loop="true" pagination="true" pagination-clickable="true">
@@ -613,7 +613,7 @@
 
             </div>
 
-        </section> -->
+        </section>
         <br>
         <br>
         <section class="articles">
@@ -704,37 +704,53 @@
             </ul>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const swiperEl = document.querySelector('.mySwiper');
             
             Object.assign(swiperEl, {
-                spaceBetween: 10,  // Default
-                slidesPerView: 1,  // Default
+                spaceBetween: 10,  
+                slidesPerView: 1,  
                 breakpoints: {
-                    480: { // 480px dan katta ekranlarda
+                
+                    220: { 
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },320: { 
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },    420: { 
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                     520: { 
                         slidesPerView: 2,
                         spaceBetween: 15,
                     },
-                    768: { // 768px dan katta ekranlarda
+                    820: { 
                         slidesPerView: 3,
                         spaceBetween: 20,
                     },
-                    1020: { // 1024px dan katta ekranlarda
+                    1020: { 
                         slidesPerView: 4,
                         spaceBetween: 30,
                     },
-                    1280: { // 1280px dan katta ekranlarda
+                    1220: { 
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    },
+                    1320: { 
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                    },
+                    1420: { 
                         slidesPerView: 5,
                         spaceBetween: 40,
                     }
+
                 }
             });
-    
-            swiperEl.initialize();
         });
     </script>
 
