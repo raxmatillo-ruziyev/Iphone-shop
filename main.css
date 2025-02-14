@@ -8,7 +8,7 @@
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -323,6 +323,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .hero-box2 {
     padding: 10px;
     display: flex;
@@ -481,7 +482,7 @@
     height: 200px;
     text-align: center;
 
-   
+
 }
 
 .slider-title {
@@ -661,62 +662,74 @@
 
 /* ---------------------------------------------------------------------------media----------------------------------------------------------- */
 html,
-        body {
-            position: relative;
-            height: 100%;
-        }
+body {
+    position: relative;
+    height: 100%;
+}
 
-        body {
-            background: transparent;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    background: transparent;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
 
-        swiper-container {
-            padding: 20px 0;
-            width: 100%;
-            height: 100%;
-            background:red;
-        }
+swiper-container {
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
 
-        swiper-slide {
-            width: 220px;
-            margin: 35px 0;
-            height: 246px;
-            text-align: center;
-            font-size: 18px;
-            padding: 15px 0;
-            background: white;
-            align-items: center;
-            border-radius: 5px;
-            background:blue;
-        }
+swiper-slide {
+    width: 220px;
+    margin: 35px 0;
+    height: 246px;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    background: white;
+    align-items: center;
+    border-radius: 5px;
+    background: blue;
+}
 
-        swiper-slide img {
-            /* text-align: center; */
-            margin: 15px auto 0 auto;
-            background-color: transparent;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+swiper-slide img {
+    /* text-align: center; */
+    margin: 15px auto 0 auto;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* -------------------------------- */
 @media (max-width:1220px) {
     .container {
-        width: 1100px;
+        max-width: 1100px;
     }
 
-    .hero-box{
+    .articles-item {
+        width: 100%;
+        max-width: 265px;
+    }
+    .comparsion-img {
+        width: 120px;
+        background: transparent;
+    
+    }
+
+    .hero-box {
         padding: 10px;
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
     }
-    .hero-box2{
+
+    .hero-box2 {
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -727,7 +740,8 @@ html,
         margin: 0 auto;
         height: auto;
         background: transparent;
-        border:none;
+        border: none;
+
         &:hover {
             transform: scale(1);
             -webkit-transform: scale(1);
@@ -735,7 +749,7 @@ html,
             -ms-transform: scale(1);
             -o-transform: scale(1);
             box-shadow: none;
-}
+        }
     }
 
     .iphone-one {
@@ -745,16 +759,43 @@ html,
     .hero-title {
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 240px;
     }
 }
 
 @media (max-width:1120px) {
     .container {
-        width: 1000px;
+        max-width: 1000px;
     }
-    .hero-item{
+    .comparsion-img {
+        width: 110px;
+        background: transparent;
+    
+    }
+    .footer-text{
+        width: 93%;
+    }
+    .footer-item:nth-child(1){
+        width: 83%;
+    }
+    .footer-item:nth-child(2){
+        width: 83%;
+    }
+    .footer-item:nth-child(3){
+        width: 83%;
+    }
+    .footer-item:nth-child(4){
+        width: 100%;
+    }
+
+    .articles-item {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .hero-item {
         width: 215px;
     }
 
@@ -815,9 +856,36 @@ html,
 
 @media (max-width:1020px) {
     .container {
-        width: 900px;
+        max-width: 900px;
     }
-    .hero-item{
+    .footer-text{
+        width: 97%;
+    }
+    .comparsion-img {
+        width: 100px;
+        background: transparent;
+    
+    }
+    .footer-subtitle{
+        width: 70%;
+    }
+
+    .articles-item {
+        width: 100%;
+        max-width: 215px;
+    }
+
+    .articles-subtitle {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .articles-text {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .hero-item {
         width: 210px;
     }
 
@@ -869,41 +937,85 @@ html,
 
 @media (max-width:920px) {
     .container {
-        width: 800px;
+        max-width: 800px;
     }
-    .hero-list{
+    .footer-text{
+        width: 100%;
+    }
+    .footer-link{
+        line-height: 10px;
+    }
+    .comparsion-img {
+        width: 88px;
+        background: transparent;
+    
+    }
+
+    .articles-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articles-title {
+        text-align: center;
+    }
+
+    .articles-item {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px 0px;
+    }
+
+    .articles-subtitle {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .articles-text {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .hero-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* gap: 3px; */
     }
-    .hero-item{
+
+    .hero-item {
         height: auto;
         margin: 5px 0;
     }
-    .hero-subtitle{
+
+    .hero-subtitle {
         font-size: 20px;
         line-height: 26px;
         padding-left: 20px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 15px;
         line-height: 24px;
         padding-left: 20px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 20px;
         line-height: 24px;
         padding-left: 20px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 200px;
         height: 250px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 300px;
     }
+
     .header-right {
         display: none;
     }
@@ -943,29 +1055,51 @@ html,
 
 @media (max-width:820px) {
     .container {
-        width: 700px;
+        max-width: 700px;
     }
-    .hero-subtitle{
+    .footer-title{
+        line-height: normal;
+    }
+    .footer-img{
+        width: 80px;
+    }
+    .comparsion-list {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .comparsion-item{
+        margin: 10px ;
+    }
+    .comparsion-img{
+    width: 145px;
+    }
+    .hero-subtitle {
         font-size: 20px;
         line-height: 26px;
         padding-left: 18px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 14px;
         line-height: 24px;
         padding-left: 18px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 19px;
         line-height: 24px;
         padding-left: 18px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 200px;
         height: 250px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 290px;
     }
 
@@ -994,30 +1128,68 @@ html,
 
 @media (max-width:720px) {
     .container {
-        width: 600px;
+        max-width: 600px;
         padding: 0px;
     }
-    .hero-subtitle{
+    .footer-list{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .footer-item:nth-child(1){
+        width: 280px
+    }
+    .footer-item:nth-child(2){
+        width: 280px
+    }
+    .footer-item:nth-child(3){
+        width: 280px
+    } .footer-item:nth-child(4){
+        width: 280px
+    }
+    .footer-text{
+        font-size: 14px;
+        width: 70%;
+    }
+    .comparsion-list {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+    .comparison-title{
+        text-align: center;
+    }
+    .comparsion-img{
+        width: 130px;
+        }
+        .comparsion-item{
+            margin: 10px 0 ;
+        }
+    .hero-subtitle {
         font-size: 19px;
         line-height: 26px;
         padding-left: 18px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 14px;
         line-height: 24px;
         padding-left: 18px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 18px;
         line-height: 24px;
         padding-left: 16px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 200px;
         height: 250px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 260px;
     }
 
@@ -1052,30 +1224,60 @@ html,
 
 @media (max-width:620px) {
     .container {
-        width: 500px;
+        max-width: 500px;
         padding: 0px;
     }
-    .hero-subtitle{
+    .footer-item:nth-child(1){
+        width: 230px
+    }
+    .footer-item:nth-child(2){
+        width: 230px
+    }
+    .footer-item:nth-child(3){
+        width: 230px
+    } .footer-item:nth-child(4){
+        width: 230px
+    }
+    .comparison-title{
+        text-align: center;
+        font-size: 25px;
+    }
+    .comparsion-img{
+        width: 110px;
+        }
+
+    .articles-item {
+        width: 100%;
+        max-width: 235px;
+        margin: 13px 0px;
+        height: auto;
+    }
+
+    .hero-subtitle {
         font-size: 18px;
         line-height: 23px;
         padding-left: 15px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 13px;
         line-height: 21px;
         padding-left: 15px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 17px;
         line-height: 21px;
         padding-left: 15px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 165px;
         height: 205px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 215px;
     }
 
@@ -1116,30 +1318,62 @@ html,
 
 @media (max-width:520px) {
     .container {
-        width: 400px;
+        max-width: 400px;
         padding: 0px;
     }
-    .hero-subtitle{
+    .footer-item:nth-child(1){
+        width: 180px
+    }
+    .footer-item:nth-child(2){
+        width: 180px
+    }
+    .footer-item:nth-child(3){
+        width: 180px
+    } .footer-item:nth-child(4){
+        width: 180px
+    }
+    .footer-text{
+        width: 90%;
+    }
+    .comparison-title{
+        text-align: center;
+        font-size: 24px;
+    }
+    .comparsion-img{
+        width: 145px;
+        }
+
+    .articles-item {
+        width: 100%;
+        max-width: 290px;
+        margin: 15px 0px;
+    }
+
+    .hero-subtitle {
         font-size: 20px;
         line-height: 25px;
         padding-left: 20px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 15px;
         line-height: 24px;
         padding-left: 20px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 19px;
         line-height: 24px;
         padding-left: 20px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 200px;
         height: 250px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 300px;
     }
 
@@ -1176,30 +1410,76 @@ html,
 
 @media (max-width:420px) {
     .container {
-        width: 300px;
+        max-width: 300px;
         padding: 0px;
     }
-    .hero-subtitle{
+    .footer-item:nth-child(1){
+        width: 100%;
+        text-align: center;
+    }
+    .footer-item:nth-child(2){
+        width: 100%;
+        text-align: center;
+    }
+    .footer-item:nth-child(3){
+        width: 100%;
+        text-align: center;
+    } .footer-item:nth-child(4){
+        width: 100%;
+        text-align: center;
+    }
+    .footer-subtitle{
+        text-align: center;
+        width: 100%;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    .comparison-title{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .articles-title {
+        font-size: 24px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .comparsion-img{
+        width: 125px;
+        }
+
+    .articles-item {
+        width: 100%;
+        max-width: 290px;
+        margin: 15px 0px;
+    }
+
+    .hero-subtitle {
         font-size: 19px;
         line-height: 24px;
         padding-left: 17px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 14px;
         line-height: 21px;
         padding-left: 17px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 18px;
         line-height: 21px;
         padding-left: 17px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 180px;
         height: 220px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 290px;
     }
 
@@ -1249,43 +1529,87 @@ html,
 
 @media (max-width:320px) {
     .container {
-        width: 200px;
+        max-width: 200px;
         padding: 0px;
     }
+    .comparsion-img{
+        width: 90px;
+        }
+    .comparison-title{
+        text-align: center;
+        font-size: 16px;    
+    }
 
-    .hero-subtitle{
+    .articles-item {
+        width: 100%;
+        max-width: 190px;
+        margin: 15px 0px;
+    }
+
+    .articles-title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .articles-list {
+        padding: 0;
+    }
+
+    .articles-img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .articles-subtitle {
+        font-size: 12px;
+    }
+
+    .articles-text {
+        font-size: 11px;
+    }
+
+    .hero-subtitle {
         font-size: 14px;
         line-height: 19px;
         padding-left: 10px;
     }
-    .hero-info{
+
+    .hero-info {
         font-size: 10px;
         line-height: 18px;
         padding-left: 10px;
     }
-    .hero-price{
+
+    .hero-price {
         font-size: 15px;
         line-height: 18px;
         padding-left: 10px;
     }
-    .hero-title{
+
+    .hero-title {
         font-size: 16px;
     }
-    .hero-btn{
-        font-size: 12px;    
+
+    .hero-btn {
+        font-size: 12px;
     }
-    .hero-item1{
+
+    .hero-item1 {
         width: 100%;
         padding: 0px;
     }
-    .iphone-two{
+
+    .iphone-two {
         width: 150px;
         height: 185px;
         padding: 0;
     }
-    .hero-item{
+
+    .hero-item {
         width: 200px;
     }
+
     .header-title {
         font-size: 14px;
         line-height: 18px;
